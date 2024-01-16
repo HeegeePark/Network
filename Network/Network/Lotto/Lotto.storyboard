@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Lotto View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="LottoViewController" id="Y6W-OH-hqX" customClass="LottoViewController" customModule="Network" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lotto" translatesAutoresizingMaskIntoConstraints="NO" id="PJC-Xt-hsL">
+                                <rect key="frame" x="116.66666666666669" y="139" width="160" height="159"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="3RW-O6-nhF"/>
+                                    <constraint firstAttribute="width" secondItem="PJC-Xt-hsL" secondAttribute="height" multiplier="1:1" constant="1" id="KlN-pd-tZ5"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dPq-8Z-tFa">
+                                <rect key="frame" x="16" y="364.33333333333331" width="361" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gOg-Wy-eqy">
+                                <rect key="frame" x="16" y="748" width="361" height="50"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BKM-S3-Gp2">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="회차별 당첨 로또 번호 조회하기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Vb-Y4-pIb">
+                                        <rect key="frame" x="53.333333333333329" y="12.333333333333369" width="254.66666666666669" height="25.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="BKM-S3-Gp2" firstAttribute="height" secondItem="gOg-Wy-eqy" secondAttribute="height" id="57E-of-jcy"/>
+                                    <constraint firstItem="6Vb-Y4-pIb" firstAttribute="centerX" secondItem="gOg-Wy-eqy" secondAttribute="centerX" id="JiU-Wb-eii"/>
+                                    <constraint firstItem="BKM-S3-Gp2" firstAttribute="top" secondItem="gOg-Wy-eqy" secondAttribute="top" id="XEz-ht-rxW"/>
+                                    <constraint firstAttribute="height" constant="50" id="jXo-ih-c4r"/>
+                                    <constraint firstAttribute="trailing" secondItem="BKM-S3-Gp2" secondAttribute="trailing" id="lAg-yB-CAf"/>
+                                    <constraint firstItem="6Vb-Y4-pIb" firstAttribute="centerY" secondItem="gOg-Wy-eqy" secondAttribute="centerY" id="m91-P3-aON"/>
+                                    <constraint firstItem="BKM-S3-Gp2" firstAttribute="leading" secondItem="gOg-Wy-eqy" secondAttribute="leading" id="zlW-uo-ORU"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F2O-ac-EGR">
+                                <rect key="frame" x="16" y="318" width="361" height="26.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="gOg-Wy-eqy" secondAttribute="trailing" constant="16" id="5Z2-3R-IyK"/>
+                            <constraint firstItem="PJC-Xt-hsL" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="80" id="5nQ-CX-WTy"/>
+                            <constraint firstItem="F2O-ac-EGR" firstAttribute="top" secondItem="PJC-Xt-hsL" secondAttribute="bottom" constant="20" id="6d3-JF-mcS"/>
+                            <constraint firstItem="F2O-ac-EGR" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="9Vc-Js-w36"/>
+                            <constraint firstItem="dPq-8Z-tFa" firstAttribute="top" secondItem="F2O-ac-EGR" secondAttribute="bottom" constant="20" id="Hrm-xV-Xq2"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="gOg-Wy-eqy" secondAttribute="bottom" constant="20" id="Ih3-FB-tOO"/>
+                            <constraint firstItem="PJC-Xt-hsL" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Jfx-wN-DtS"/>
+                            <constraint firstItem="dPq-8Z-tFa" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="UC3-Kf-DG9"/>
+                            <constraint firstItem="gOg-Wy-eqy" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="oi7-zL-nVW"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="dPq-8Z-tFa" secondAttribute="trailing" constant="16" id="q7f-8m-HnO"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="F2O-ac-EGR" secondAttribute="trailing" constant="16" id="ty2-gi-dcn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="fakeTextFieldView" destination="gOg-Wy-eqy" id="Xch-ph-p7C"/>
+                        <outlet property="numberTextField" destination="BKM-S3-Gp2" id="xM5-Ld-25Y"/>
+                        <outlet property="resultLabel" destination="dPq-8Z-tFa" id="GRL-ZV-Ybt"/>
+                        <outlet property="titleLabel" destination="F2O-ac-EGR" id="p7r-Sc-sna"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="67.938931297709928" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="lotto" width="512" height="512"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
