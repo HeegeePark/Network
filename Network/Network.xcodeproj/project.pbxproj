@@ -24,8 +24,10 @@
 		4FCBE9C72B567C7500DD60ED /* Lotto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCBE9C62B567C7500DD60ED /* Lotto.swift */; };
 		4FCBE9C92B567DC400DD60ED /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCBE9C82B567DC400DD60ED /* Strings.swift */; };
 		4FCBE9CF2B56811500DD60ED /* DateFormatManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCBE9CE2B56811500DD60ED /* DateFormatManager.swift */; };
-		4FCBE9D42B5689AD00DD60ED /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCBE9D32B5689AD00DD60ED /* APIManager.swift */; };
+		4FCBE9D42B5689AD00DD60ED /* APIType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCBE9D32B5689AD00DD60ED /* APIType.swift */; };
 		4FCBE9D72B568EDA00DD60ED /* LottoInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCBE9D62B568EDA00DD60ED /* LottoInfo.swift */; };
+		4FCBE9D92B56903300DD60ED /* BeerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCBE9D82B56903300DD60ED /* BeerAPI.swift */; };
+		4FCBE9DF2B57228200DD60ED /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCBE9DE2B57228200DD60ED /* APIRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,8 +49,10 @@
 		4FCBE9C62B567C7500DD60ED /* Lotto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lotto.swift; sourceTree = "<group>"; };
 		4FCBE9C82B567DC400DD60ED /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		4FCBE9CE2B56811500DD60ED /* DateFormatManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatManager.swift; sourceTree = "<group>"; };
-		4FCBE9D32B5689AD00DD60ED /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		4FCBE9D32B5689AD00DD60ED /* APIType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIType.swift; sourceTree = "<group>"; };
 		4FCBE9D62B568EDA00DD60ED /* LottoInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoInfo.swift; sourceTree = "<group>"; };
+		4FCBE9D82B56903300DD60ED /* BeerAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerAPI.swift; sourceTree = "<group>"; };
+		4FCBE9DE2B57228200DD60ED /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,7 @@
 		4F4DCB992B5666CD004C644D /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				4FCBE9DD2B57226C00DD60ED /* NetworkUtil */,
 				4FCBE9D22B56840300DD60ED /* Manager */,
 				4F4DCBBA2B56704F004C644D /* Extension */,
 				4F4DCBAE2B5666EC004C644D /* Lotto */,
@@ -113,8 +118,10 @@
 		4F4DCBAF2B566707004C644D /* Beer */ = {
 			isa = PBXGroup;
 			children = (
+				4FCBE9E02B572F9700DD60ED /* Model */,
 				4F4DCBB42B5668A6004C644D /* Beer.storyboard */,
 				4F4DCBB62B5668B1004C644D /* BeerViewController.swift */,
+				4FCBE9D82B56903300DD60ED /* BeerAPI.swift */,
 			);
 			path = Beer;
 			sourceTree = "<group>";
@@ -131,7 +138,6 @@
 			isa = PBXGroup;
 			children = (
 				4FCBE9CE2B56811500DD60ED /* DateFormatManager.swift */,
-				4FCBE9D32B5689AD00DD60ED /* APIManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -141,6 +147,22 @@
 			children = (
 				4FCBE9C62B567C7500DD60ED /* Lotto.swift */,
 				4FCBE9D62B568EDA00DD60ED /* LottoInfo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4FCBE9DD2B57226C00DD60ED /* NetworkUtil */ = {
+			isa = PBXGroup;
+			children = (
+				4FCBE9DE2B57228200DD60ED /* APIRouter.swift */,
+				4FCBE9D32B5689AD00DD60ED /* APIType.swift */,
+			);
+			path = NetworkUtil;
+			sourceTree = "<group>";
+		};
+		4FCBE9E02B572F9700DD60ED /* Model */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -224,10 +246,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FCBE9D42B5689AD00DD60ED /* APIManager.swift in Sources */,
+				4FCBE9D42B5689AD00DD60ED /* APIType.swift in Sources */,
 				4FCBE9C72B567C7500DD60ED /* Lotto.swift in Sources */,
 				4F4DCBB72B5668B1004C644D /* BeerViewController.swift in Sources */,
 				4FCBE9C92B567DC400DD60ED /* Strings.swift in Sources */,
+				4FCBE9DF2B57228200DD60ED /* APIRouter.swift in Sources */,
+				4FCBE9D92B56903300DD60ED /* BeerAPI.swift in Sources */,
 				4F4DCB9F2B5666CD004C644D /* ViewController.swift in Sources */,
 				4FCBE9C02B567A8500DD60ED /* UIView+Extension.swift in Sources */,
 				4FCBE9D72B568EDA00DD60ED /* LottoInfo.swift in Sources */,

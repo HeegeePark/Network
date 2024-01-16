@@ -11,14 +11,15 @@ import Alamofire
 class LottoAPI {
     // 로또 번호 가져오기
     static func fetchLotto(date: Int, _ completion: @escaping ((Lotto) -> Void)) {
-        let url = APIManager.lotto(date: date).requestURL
+        let url = APIRouter(apiType: .lotto(date: date)).requestURL
+        print(url)
         AF.request(url, method: .get)
             .responseDecodable(of: Lotto.self) { response in
                 switch response.result {
                 case .success(let success):
                     completion(success)
                 case .failure(let failure):
-                    print("오류 발생", failure, terminator: " ")
+                    print("로또 조회 오류 발생", failure)
                 }
             }
     }
