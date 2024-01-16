@@ -17,8 +17,15 @@
 		4F4DCBB32B566886004C644D /* LottoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4DCBB22B566886004C644D /* LottoViewController.swift */; };
 		4F4DCBB52B5668A6004C644D /* Beer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F4DCBB42B5668A6004C644D /* Beer.storyboard */; };
 		4F4DCBB72B5668B1004C644D /* BeerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4DCBB62B5668B1004C644D /* BeerViewController.swift */; };
-		4F4DCBBE2B5670C2004C644D /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4DCBBD2B5670C2004C644D /* Style.swift */; };
+		4F4DCBBE2B5670C2004C644D /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4DCBBD2B5670C2004C644D /* Styles.swift */; };
 		4FCBE9C02B567A8500DD60ED /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCBE9BF2B567A8500DD60ED /* UIView+Extension.swift */; };
+		4FCBE9C22B567C2900DD60ED /* LottoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCBE9C12B567C2900DD60ED /* LottoAPI.swift */; };
+		4FCBE9C52B567C3E00DD60ED /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 4FCBE9C42B567C3E00DD60ED /* Alamofire */; };
+		4FCBE9C72B567C7500DD60ED /* Lotto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCBE9C62B567C7500DD60ED /* Lotto.swift */; };
+		4FCBE9C92B567DC400DD60ED /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCBE9C82B567DC400DD60ED /* Strings.swift */; };
+		4FCBE9CF2B56811500DD60ED /* DateFormatManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCBE9CE2B56811500DD60ED /* DateFormatManager.swift */; };
+		4FCBE9D42B5689AD00DD60ED /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCBE9D32B5689AD00DD60ED /* APIManager.swift */; };
+		4FCBE9D72B568EDA00DD60ED /* LottoInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCBE9D62B568EDA00DD60ED /* LottoInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,8 +41,14 @@
 		4F4DCBB22B566886004C644D /* LottoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoViewController.swift; sourceTree = "<group>"; };
 		4F4DCBB42B5668A6004C644D /* Beer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Beer.storyboard; sourceTree = "<group>"; };
 		4F4DCBB62B5668B1004C644D /* BeerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerViewController.swift; sourceTree = "<group>"; };
-		4F4DCBBD2B5670C2004C644D /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		4F4DCBBD2B5670C2004C644D /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
 		4FCBE9BF2B567A8500DD60ED /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		4FCBE9C12B567C2900DD60ED /* LottoAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoAPI.swift; sourceTree = "<group>"; };
+		4FCBE9C62B567C7500DD60ED /* Lotto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lotto.swift; sourceTree = "<group>"; };
+		4FCBE9C82B567DC400DD60ED /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		4FCBE9CE2B56811500DD60ED /* DateFormatManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatManager.swift; sourceTree = "<group>"; };
+		4FCBE9D32B5689AD00DD60ED /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		4FCBE9D62B568EDA00DD60ED /* LottoInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FCBE9C52B567C3E00DD60ED /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,10 +82,12 @@
 		4F4DCB992B5666CD004C644D /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				4FCBE9D22B56840300DD60ED /* Manager */,
 				4F4DCBBA2B56704F004C644D /* Extension */,
 				4F4DCBAE2B5666EC004C644D /* Lotto */,
 				4F4DCBAF2B566707004C644D /* Beer */,
-				4F4DCBBD2B5670C2004C644D /* Style.swift */,
+				4F4DCBBD2B5670C2004C644D /* Styles.swift */,
+				4FCBE9C82B567DC400DD60ED /* Strings.swift */,
 				4F4DCB9A2B5666CD004C644D /* AppDelegate.swift */,
 				4F4DCB9C2B5666CD004C644D /* SceneDelegate.swift */,
 				4F4DCB9E2B5666CD004C644D /* ViewController.swift */,
@@ -86,8 +102,10 @@
 		4F4DCBAE2B5666EC004C644D /* Lotto */ = {
 			isa = PBXGroup;
 			children = (
+				4FCBE9D52B568EBE00DD60ED /* Model */,
 				4F4DCBB02B566877004C644D /* Lotto.storyboard */,
 				4F4DCBB22B566886004C644D /* LottoViewController.swift */,
+				4FCBE9C12B567C2900DD60ED /* LottoAPI.swift */,
 			);
 			path = Lotto;
 			sourceTree = "<group>";
@@ -109,6 +127,24 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		4FCBE9D22B56840300DD60ED /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				4FCBE9CE2B56811500DD60ED /* DateFormatManager.swift */,
+				4FCBE9D32B5689AD00DD60ED /* APIManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		4FCBE9D52B568EBE00DD60ED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4FCBE9C62B567C7500DD60ED /* Lotto.swift */,
+				4FCBE9D62B568EDA00DD60ED /* LottoInfo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -125,6 +161,9 @@
 			dependencies = (
 			);
 			name = Network;
+			packageProductDependencies = (
+				4FCBE9C42B567C3E00DD60ED /* Alamofire */,
+			);
 			productName = Network;
 			productReference = 4F4DCB972B5666CD004C644D /* Network.app */;
 			productType = "com.apple.product-type.application";
@@ -153,6 +192,9 @@
 				Base,
 			);
 			mainGroup = 4F4DCB8E2B5666CD004C644D;
+			packageReferences = (
+				4FCBE9C32B567C3E00DD60ED /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 4F4DCB982B5666CD004C644D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -182,11 +224,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FCBE9D42B5689AD00DD60ED /* APIManager.swift in Sources */,
+				4FCBE9C72B567C7500DD60ED /* Lotto.swift in Sources */,
 				4F4DCBB72B5668B1004C644D /* BeerViewController.swift in Sources */,
+				4FCBE9C92B567DC400DD60ED /* Strings.swift in Sources */,
 				4F4DCB9F2B5666CD004C644D /* ViewController.swift in Sources */,
 				4FCBE9C02B567A8500DD60ED /* UIView+Extension.swift in Sources */,
-				4F4DCBBE2B5670C2004C644D /* Style.swift in Sources */,
+				4FCBE9D72B568EDA00DD60ED /* LottoInfo.swift in Sources */,
+				4FCBE9CF2B56811500DD60ED /* DateFormatManager.swift in Sources */,
+				4F4DCBBE2B5670C2004C644D /* Styles.swift in Sources */,
 				4F4DCBB32B566886004C644D /* LottoViewController.swift in Sources */,
+				4FCBE9C22B567C2900DD60ED /* LottoAPI.swift in Sources */,
 				4F4DCB9B2B5666CD004C644D /* AppDelegate.swift in Sources */,
 				4F4DCB9D2B5666CD004C644D /* SceneDelegate.swift in Sources */,
 			);
@@ -411,6 +459,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4FCBE9C32B567C3E00DD60ED /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4FCBE9C42B567C3E00DD60ED /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4FCBE9C32B567C3E00DD60ED /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4F4DCB8F2B5666CD004C644D /* Project object */;
 }

@@ -1,5 +1,5 @@
 //
-//  Style.swift
+//  Styles.swift
 //  Network
 //
 //  Created by 박희지 on 1/16/24.
