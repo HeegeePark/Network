@@ -85,6 +85,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="k9S-oM-fXI">
+                    <connections>
+                        <action selector="pickerViewDismiss:" destination="Y6W-OH-hqX" id="o9N-nE-5a4"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="67.938931297709928" y="-2.1126760563380285"/>
         </scene>

@@ -69,7 +69,12 @@ class BeerViewController: UIViewController {
         guard let randomBeer else { return }
         let beerInfo = BeerInfo(beer: randomBeer)
         
-        randomThumbnailImageView.kf.setImage(with: beerInfo.imageURL)
+        if randomBeer.image_url != nil {
+            randomThumbnailImageView.kf.setImage(with: beerInfo.imageURL)
+        } else {
+            let dummyImage = UIImage(named: "beer")?.withRenderingMode(.alwaysOriginal)
+            randomThumbnailImageView.image = dummyImage
+        }
         randomNameLabel.text = randomBeer.name
     }
 }

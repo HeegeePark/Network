@@ -34,6 +34,10 @@ class LottoViewController: UIViewController {
         cofigureUI()
     }
     
+    @IBAction func pickerViewDismiss(_ sender: UITapGestureRecognizer) {
+        view.endEditing(true)
+    }
+    
     func udpateLottoResult() {
         guard let lotto = lotto else { return }
         
