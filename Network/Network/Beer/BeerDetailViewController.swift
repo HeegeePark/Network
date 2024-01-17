@@ -21,10 +21,12 @@ class BeerDetailViewController: UIViewController {
         super.viewDidLoad()
 
         configureUI()
+        configureNavigationBar()
         updateUI()
     }
     
     func configureNavigationBar() {
+        navigationController?.navigationBar.tintColor = .black
         navigationItem.title = "👍 오늘의 추천 맥주"
         
         let backButton = UIBarButtonItem(title: nil, image: UIImage(systemName: "chevron.left"), target: self, action: #selector(pushTapped))

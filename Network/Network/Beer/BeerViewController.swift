@@ -17,6 +17,7 @@ class BeerViewController: UIViewController {
     @IBOutlet var randomThumbnailImageView: UIImageView!
     @IBOutlet var randomNameLabel: UILabel!
     
+    @IBOutlet var moreDetailButton: UIButton!
     
     var randomBeer: Beer? {
         didSet {
@@ -51,10 +52,8 @@ class BeerViewController: UIViewController {
     }
     
     func fetchRandomBeer() {
-        DispatchQueue.global().async {
-            BeerAPI.getRandom { beer in
-                self.randomBeer = beer
-            }
+        BeerAPI.getRandom { beer in
+            self.randomBeer = beer
         }
     }
     
@@ -78,7 +77,9 @@ class BeerViewController: UIViewController {
 // MARK: - custom UI
 extension BeerViewController {
     func cofigureUI() {
+        randomNameLabel.numberOfLines = 2
         randomThumbnailImageView.contentMode = .scaleAspectFit
+        moreDetailButton.setCornerRadius()
     }
     
     func cofigureTableView() {
@@ -102,5 +103,13 @@ extension BeerViewController: UITableViewDelegate, UITableViewDataSource {
         cell.bindItem(beer: beer)
         
         return cell
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "🍻 더 많은 맥주를 알아볼까요?"
     }
 }
