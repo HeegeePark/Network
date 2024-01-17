@@ -38,8 +38,9 @@ class BeerViewController: UIViewController {
         cofigureTableView()
         
         fetchRandomBeer()
-//        fetchBeerList()
+        fetchBeerList()
     }
+    
     @IBAction func resetRandomButtonTapped(_ sender: Any) {
         fetchRandomBeer()
     }
@@ -102,19 +103,25 @@ extension BeerViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: BeerTableViewCell.identfier, for: indexPath) as! BeerTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: BeerTableViewCell.identifier, for: indexPath) as! BeerTableViewCell
         let beer = beerList[indexPath.row]
+        
         
         cell.bindItem(beer: beer)
         
         return cell
     }
     
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return "🍻 더 많은 맥주를 알아볼까요?"
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: BeerDetailViewController.identifier) as! BeerDetailViewController
+        
+        let beer = beerList[indexPath.row]
+        
+        vc.bindBeer(beer: beer)
+        navigationController?.pushViewController(vc, animated: true)
     }
 }

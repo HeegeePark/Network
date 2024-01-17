@@ -93,30 +93,31 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="P3i-Ia-hMe">
-                                                    <rect key="frame" x="8" y="8" width="93.666666666666671" height="125"/>
+                                                    <rect key="frame" x="16" y="8" width="78.666666666666671" height="125"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="P3i-Ia-hMe" secondAttribute="height" multiplier="3:4" id="iKi-Pt-3L4"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="맥주 맥주 ㅣ맥주 매죽맥 맥주" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4FG-uO-sAZ">
-                                                    <rect key="frame" x="109.66666666666667" y="61.666666666666657" width="255.33333333333331" height="18"/>
+                                                    <rect key="frame" x="102.66666666666666" y="61.666666666666657" width="262.33333333333337" height="18"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="P3i-Ia-hMe" firstAttribute="leading" secondItem="2qX-KK-VLr" secondAttribute="leading" constant="16" id="IEu-2j-gu4"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="4FG-uO-sAZ" secondAttribute="trailing" constant="8" id="JV1-WX-Php"/>
-                                                <constraint firstAttribute="bottom" secondItem="P3i-Ia-hMe" secondAttribute="bottom" constant="8" id="NmW-Jl-bFp"/>
-                                                <constraint firstItem="4FG-uO-sAZ" firstAttribute="leading" secondItem="P3i-Ia-hMe" secondAttribute="trailing" constant="8" id="S63-eM-p0B"/>
-                                                <constraint firstItem="P3i-Ia-hMe" firstAttribute="leading" secondItem="2qX-KK-VLr" secondAttribute="leading" constant="8" id="anf-Yu-HM1"/>
-                                                <constraint firstItem="4FG-uO-sAZ" firstAttribute="centerY" secondItem="P3i-Ia-hMe" secondAttribute="centerY" id="bBW-9Z-416"/>
-                                                <constraint firstItem="P3i-Ia-hMe" firstAttribute="top" secondItem="2qX-KK-VLr" secondAttribute="top" constant="8" id="ral-At-ozw"/>
+                                                <constraint firstItem="P3i-Ia-hMe" firstAttribute="top" secondItem="2qX-KK-VLr" secondAttribute="top" constant="8" id="R7D-jN-KcA"/>
+                                                <constraint firstAttribute="bottom" secondItem="P3i-Ia-hMe" secondAttribute="bottom" constant="8" id="Ulh-zy-Be2"/>
+                                                <constraint firstItem="4FG-uO-sAZ" firstAttribute="leading" secondItem="P3i-Ia-hMe" secondAttribute="trailing" constant="8" id="hLb-L1-PPx"/>
+                                                <constraint firstItem="4FG-uO-sAZ" firstAttribute="centerY" secondItem="P3i-Ia-hMe" secondAttribute="centerY" id="nuS-ZB-DVd"/>
+                                                <constraint firstItem="P3i-Ia-hMe" firstAttribute="width" secondItem="2qX-KK-VLr" secondAttribute="width" multiplier="0.2" id="zcO-z9-MeK"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="nameLabel" destination="2qX-KK-VLr" id="zge-SV-gKK"/>
-                                            <outlet property="thumbnailImageView" destination="2qX-KK-VLr" id="odI-4e-ya3"/>
+                                            <outlet property="nameLabel" destination="4FG-uO-sAZ" id="7kA-p9-1Di"/>
+                                            <outlet property="thumbnailImageView" destination="P3i-Ia-hMe" id="XWm-38-92g"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
