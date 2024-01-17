@@ -12,7 +12,6 @@ class LottoAPI {
     // 로또 번호 가져오기
     static func fetchLotto(date: Int, _ completion: @escaping ((Lotto) -> Void)) {
         let url = APIRouter(apiType: .lotto(date: date)).requestURL
-        print(url)
         AF.request(url, method: .get)
             .responseDecodable(of: Lotto.self) { response in
                 switch response.result {
